@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+        <style>
+}
+            html{
+                filter:blur;
+            }
+               body{
+                font-family: 'Fascinate Inline', cursive;
+            height: 100;
+        }
+        p{
+            text-align: center;
+    margin-top: 250px;
+    font-size: 240px;
+    font-family: Fascinate;
+}
+        
+        </style>
+     
+    </head>
+    <body onload="ratio()">
+        <p>lia</p>
+    </body>
+    <script type="text/javascript">
+        var h,w,r;
+
+function ratio(){
+    h=document.querySelector("html").clientHeight;
+w=document.querySelector("html").clientWidth;
+r=h/w;
+if(r>1){
+    document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/abh-inav/web/main/background_blur_rotated.png')";
+}
+else{
+    document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/abh-inav/web/main/background_blur.png')";
+}
+}
+    </script>
+    
+</html>
